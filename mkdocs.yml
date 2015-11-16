@@ -1,0 +1,8 @@
+site_name: お江戸のチケット管理
+pages:
+- HOME: index.md
+- 開発者向け:
+    - 目次: forDevelopers/index.md
+    - 開発環境の概要: forDevelopers/overview.md
+    - 開発環境構築手順 for Eclipse: forDevelopers/How_to_Setup_Development_Environment_Eclipse.md
+theme: cosmo
