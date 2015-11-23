@@ -4,5 +4,5 @@
 
 2. 開発環境構築手順
 
-    - [Eclipse](How_to_Setup_Development_Environment_Eclipse.md)
-    - NetBeans
+    - [Eclipse](./How_to_Setup_Development_Environment_Eclipse.md)
+    - [NetBeans](./How_to_Setup_Development_Environment_NetBeans.md)

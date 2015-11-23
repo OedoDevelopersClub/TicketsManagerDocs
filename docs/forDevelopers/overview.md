@@ -10,7 +10,7 @@
 ## 統合開発環境 (IDE)
 
 * Eclipse
-* Net Beans (現在ドキュメント未整備)
+* Net Beans (推奨)
 
 ## ソースコードリポジトリ (SCM)
 
