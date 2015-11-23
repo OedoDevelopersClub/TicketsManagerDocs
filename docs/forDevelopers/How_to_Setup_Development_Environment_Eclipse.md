@@ -5,6 +5,8 @@
 
 ## Java 8 (JDK)
 
+※ 既にインストール済の場合は、省略可
+
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 ![Download JDK](./images/Download_JDK.png)
