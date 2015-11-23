@@ -1,4 +1,6 @@
 site_name: お江戸のチケット管理
+site_url: http://oedodevelopersclub.github.io/TicketsManagerDocs/
+repo_url: https://github.com/OedoDevelopersClub/TicketsManagerDocs
 pages:
 - HOME: index.md
 - 概要: overview.md
