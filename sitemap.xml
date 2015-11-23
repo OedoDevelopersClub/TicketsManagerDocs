@@ -37,6 +37,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>None/forDevelopers/How_to_Setup_Development_Environment_NetBeans/</loc>
+     <lastmod>2015-11-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
