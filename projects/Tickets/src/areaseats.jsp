@@ -8,16 +8,31 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-<h2>座席一覧</h2>
-
+<%
+	out.println("<h2>座席("+ request.getParameter("seatfloor") + "-" +  request.getParameter("subarea") + ")</h2>");
+%>
 <script>
 $(
-	setSeatList(seatfloor,subarea);
+//	setSeatList(seatfloor,subarea);
+	var $label_y = $("div").attr({
+		class: "label_y"
+	}).css({
+		width: "50px",
+		height: "50px",
+		border: "solid 1px black"
+	});
+	$("body").append($label_y);
 )
 function setSeatList(seatfloor,subarea) {
 	$.getJSON("./tickets",filter:{seatfloor:seatfloor, subarea: subarea}, function(json) {
-	setSeatList(json)
-	})
+		var $label_y = $("div").attr({
+			class: "label_y"
+		}).css({
+			width: "50px",
+			height: "50px",
+			border: "solid 1px black"
+		}));		
+	});
 }
 </script>
 </body>

@@ -10,7 +10,7 @@
 <body>
 <h2>座席一覧</h2>
 <div style="top:50px;left:50px;position:absolute;">
-<img src="./img/concert.png" width="100%" height="100%" />
+<img src="./img/concert.png" width="515px" height="724px" />
 <div id="floor1_1" class="seatarea" style="top:75px;left:150px;width:75px;height:180px;position:absolute;"></div>
 <div id="floor1_2" class="seatarea" style="top:75px;left:230px;width:55px;height:180px;position:absolute;"></div>
 <div id="floor1_3" class="seatarea" style="top:75px;left:290px;width:75px;height:180px;position:absolute;"></div>
