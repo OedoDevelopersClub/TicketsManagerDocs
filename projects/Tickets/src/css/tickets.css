@@ -1,0 +1,6 @@
+div.seatarea:hover {
+  background-color: #0000FF;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  -ms-filter: "alpha(opacity=30)";
+}

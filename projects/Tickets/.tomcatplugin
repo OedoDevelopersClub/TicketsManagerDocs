@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcatProjectProperties>
+    <rootDir>/</rootDir>
+    <exportSource>false</exportSource>
+    <reloadable>true</reloadable>
+    <redirectLogger>false</redirectLogger>
+    <updateXml>true</updateXml>
+    <warLocation>/Applications/eclipse/Eclipse.app/Contents/Tomcat/8.0/webapps/Tickets.war</warLocation>
+    <extraInfo></extraInfo>
+    <webPath>/Tickets</webPath>
+    <webClassPathEntries>
+    </webClassPathEntries>
+</tomcatProjectProperties>
