@@ -6,3 +6,10 @@
 
     - [Eclipse](./How_to_Setup_Development_Environment_Eclipse.md)
     - [NetBeans](./How_to_Setup_Development_Environment_NetBeans.md)
+
+
+## Appendix
+
+  * Tips
+
+    [プログラミングに最適なフォントの使用](./tips/Using_Better_Font_for_Programming.md)
