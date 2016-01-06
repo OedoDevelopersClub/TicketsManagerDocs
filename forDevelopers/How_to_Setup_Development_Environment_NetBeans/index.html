@@ -94,6 +94,12 @@
 </li>
 
                         
+                            
+<li >
+    <a href="../tips/Using_Better_Font_for_Programming/">Appendix</a>
+</li>
+
+                        
                         </ul>
                     </li>
                 
@@ -113,8 +119,8 @@
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../tips/Using_Better_Font_for_Programming/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -145,7 +151,9 @@
         
             <li><a href="#netbeans_1">NetBeans</a></li>
         
-            <li><a href="#java-web">Java Web アプリケーションの作成と動作確認</a></li>
+            <li><a href="#java-web">Java Web アプリケーション プロジェクトのクローンと動作確認</a></li>
+        
+            <li><a href="#java-web_1">Java Web アプリケーション プロジェクトの作成と動作確認</a></li>
         
     
     </ul>
@@ -219,9 +227,47 @@ zip 形式でダウンロードされるので適当な場所へ解凍。(Window
 </li>
 </ol>
 <p><img alt="Launch NetBeans" src="../images/Launch_NetBeans.png" /></p>
-<h2 id="java-web">Java Web アプリケーションの作成と動作確認</h2>
+<h2 id="java-web">Java Web アプリケーション プロジェクトのクローンと動作確認</h2>
+<ol>
+<li>コマンドプロント(Windows)、またはターミナル(Mac) などのコンソールを開く</li>
+<li>プロジェクトを作成する場所へ cd コマンドで移動する (ここでは <code>C:\repos\OedoDevelopersClub</code> とする)  </li>
+<li>
+<p>コマンド <code>git clone https://github.com/OedoDevelopersClub/TicketsManager.git</code> を入力し実行する</p>
+</li>
+<li>
+<p>プロンプトでパスワード入力を促されるので、GitHub のログインパスワードを入力する</p>
+<ul>
+<li>ニ要素認証 (Two-factor authentication) を有効にしている場合はトークン (<a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>) を入力する</li>
+</ul>
+</li>
+</ol>
+<p>参考： GitHub ページ (<a href="https://github.com/OedoDevelopersClub/TicketsManager">https://github.com/OedoDevelopersClub/TicketsManager</a>) の以下の枠内が clone URL (クローンの対象を示す URI)</p>
+<p><img alt="GitHub_git-clone" src="../images/GitHub_git-clone.png" /></p>
+<ol>
+<li>NetBeans を開き、メニューバーの「ファイル」から「新規プロジェクト」を選択</li>
+<li>カテゴリ「Maven」を選択し、プロジェクト「既存のPOMを使用したプロジェクト」を選択して、「次」をクリックし「終了」</li>
+<li>ウィザード「プロジェクトを開く」が表示されるのでクローンしたフォルダを選択し、プロジェクトを開く</li>
+</ol>
+<p><img alt="NetBenas_Import_Cloned_Maven_Project" src="../images/NetBenas_Import_Cloned_Maven_Project.png" /></p>
+<ol>
+<li>インポートしたプロジェクトを右クリックし「プロパティ」を選択</li>
+</ol>
+<p><img alt="NetBeans_Open_Project_Properties" src="../images/NetBeans_Open_Project_Properties.png" /></p>
+<ol>
+<li>カテゴリ「ビルド」&gt;「実行」を選択し、「サーバー」「Java EE バージョン」を以下のように選択し、OK</li>
+</ol>
+<p><dt>サーバー</dt><dd>GlassFish Server 4.1.1</dd>
+   <dt>Java EE バージョン</dt><dd>Java EE 7 Web</dd>
+   <dt>コンテキストパス</dt><dd>/TicketManager (デフォルト)</dd></p>
+<p><img alt="NetBeans_JavaEE__Project_Properties_Execution_Environment" src="../images/NetBeans_JavaEE__Project_Properties_Execution_Environment.png" /></p>
+<ol>
+<li>メニューバー「デバッグ」から「プロジェクト(TicketManger)をデバッグ」を選択する</li>
+<li>プロジェクトがビルドされ、ブラウザが起動し、<code>http://localhost:8080/TicketsManager/</code> が開かれ初期画面が表示されれば成功</li>
+</ol>
+<h2 id="java-web_1">Java Web アプリケーション プロジェクトの作成と動作確認</h2>
+<p><strong>※ 新規でプロジェクトを作成する場合の手順 (既に開発中のプロジェクトは 「Java Web アプリケーション プロジェクトのクローンと動作確認」を参照)</strong></p>
 <p>参考: <a href="https://netbeans.org/kb/docs/javaee/cdi-intro.html">Getting Started with Contexts and Dependency Injection and JSF 2.x - NetBeans IDE Tutorial</a></p>
-<p>試しに、新しく Java Web アプリケーションを作成してみます。</p>
+<p>新しく Java Web アプリケーションを作成してみます。</p>
 <ol>
 <li>メニューバーの「ファイル」から「新規プロジェクト...」を選択</li>
 <li>カテゴリ「Java Web」から「Webアプリケーション」を選択して次</li>

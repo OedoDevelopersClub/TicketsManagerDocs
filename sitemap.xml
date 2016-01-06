@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://oedodevelopersclub.github.io/TicketsManagerDocs//</loc>
-     <lastmod>2015-11-23</lastmod>
+     <lastmod>2016-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>http://oedodevelopersclub.github.io/TicketsManagerDocs//overview/</loc>
-     <lastmod>2015-11-23</lastmod>
+     <lastmod>2016-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,25 +21,31 @@
         
     <url>
      <loc>http://oedodevelopersclub.github.io/TicketsManagerDocs//forDevelopers/</loc>
-     <lastmod>2015-11-23</lastmod>
+     <lastmod>2016-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://oedodevelopersclub.github.io/TicketsManagerDocs//forDevelopers/overview/</loc>
-     <lastmod>2015-11-23</lastmod>
+     <lastmod>2016-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://oedodevelopersclub.github.io/TicketsManagerDocs//forDevelopers/How_to_Setup_Development_Environment_Eclipse/</loc>
-     <lastmod>2015-11-23</lastmod>
+     <lastmod>2016-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://oedodevelopersclub.github.io/TicketsManagerDocs//forDevelopers/How_to_Setup_Development_Environment_NetBeans/</loc>
-     <lastmod>2015-11-23</lastmod>
+     <lastmod>2016-01-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://oedodevelopersclub.github.io/TicketsManagerDocs//forDevelopers/tips/Using_Better_Font_for_Programming/</loc>
+     <lastmod>2016-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

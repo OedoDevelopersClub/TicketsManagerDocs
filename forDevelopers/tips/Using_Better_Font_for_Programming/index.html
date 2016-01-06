@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="canonical" href="http://oedodevelopersclub.github.io/TicketsManagerDocs/forDevelopers/tips/Using_Better_Font_for_Programming/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
 
-	<title>お江戸のチケット管理</title>
+	<title>Appendix - お江戸のチケット管理</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
-        <link href="./my_style.css" rel="stylesheet">
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+        <link href="../../../my_style.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -44,7 +44,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">お江戸のチケット管理</a>
+            <a class="navbar-brand" href="../../..">お江戸のチケット管理</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -55,48 +55,48 @@
                 
                 
                     <li >
-                        <a href=".">HOME</a>
+                        <a href="../../..">HOME</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="overview/">概要</a>
+                        <a href="../../../overview/">概要</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">開発者向け <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
 <li >
-    <a href="forDevelopers/">目次</a>
+    <a href="../../">目次</a>
 </li>
 
                         
                             
 <li >
-    <a href="forDevelopers/overview/">開発環境の概要</a>
+    <a href="../../overview/">開発環境の概要</a>
 </li>
 
                         
                             
 <li >
-    <a href="forDevelopers/How_to_Setup_Development_Environment_Eclipse/">開発環境構築手順 for Eclipse</a>
+    <a href="../../How_to_Setup_Development_Environment_Eclipse/">開発環境構築手順 for Eclipse</a>
 </li>
 
                         
                             
 <li >
-    <a href="forDevelopers/How_to_Setup_Development_Environment_NetBeans/">開発環境構築手順 for NetBeans</a>
+    <a href="../../How_to_Setup_Development_Environment_NetBeans/">開発環境構築手順 for NetBeans</a>
 </li>
 
                         
                             
-<li >
-    <a href="forDevelopers/tips/Using_Better_Font_for_Programming/">Appendix</a>
+<li class="active">
+    <a href="./">Appendix</a>
 </li>
 
                         
@@ -114,8 +114,8 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../../How_to_Setup_Development_Environment_NetBeans/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -142,15 +142,44 @@
 
         <div class="container">
             
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#_1">プログラミングに最適なフォントの使用</a></li>
+        
+            <li><a href="#netbeans">NetBeans</a></li>
+        
+            <li><a href="#eclipse">Eclipse</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
-
-
+<h1 id="_1">プログラミングに最適なフォントの使用</h1>
+<p>Windows の場合、デフォルトフォントは「MS ゴシック」などになっているので、「メイリオ」や等幅は「Consolas」に変更するのがおすすめ</p>
+<h2 id="netbeans">NetBeans</h2>
+<ol>
+<li>メニューバー「ツール」→「オプション」</li>
+<li>「フォントと色」を選択し、「フォント」の右の「...」から設定</li>
+</ol>
+<p>### エディタ以外のフォントのアンチエイリアスを有効にする</p>
+<ol>
+<li><NetBeans インストールフォルダ>/etc/netbeans.conf を開く</li>
+<li>netbeans_default_options の値の最後に  <code>-J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=on</code> を追加し、NetBeans を再起動
+  設定例：
+          netbeans_default_options="-J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true -J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=on"</li>
+</ol>
+<p>プロジェクトビューなどのフォントも見やすくなる
+  <img alt="画像" src="../../images/NetBeans_Font_Anti-Aliasing.png" /></p>
+<p>参考：<a href="http://jlinuxer.dip.jp/?p=1107">[Fedora19] NetBeans7.4 Editor Setting Fontのアンチエイリアス(Anti-Aliasing) : J-Linuxer</a></p>
+<h2 id="eclipse">Eclipse</h2>
+<ol>
+<li>メニューバー「ウィンドウ」→「設定」</li>
+<li>「一般」&gt;「外観」&gt;「色とフォント」を選択</li>
+<li>Java 等のエディタテキストを選択し「編集」から設定</li>
+</ol></div>
+            
         </div>
 
         <footer class="col-md-12">
@@ -159,12 +188,12 @@
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
