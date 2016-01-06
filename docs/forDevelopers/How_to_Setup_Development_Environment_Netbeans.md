@@ -73,11 +73,48 @@ https://netbeans.org/downloads/
 
   ![Launch NetBeans](./images/Launch_NetBeans.png)
 
-## Java Web アプリケーションの作成と動作確認
+
+## Java Web アプリケーション プロジェクトのクローンと動作確認
+
+ 1. コマンドプロント(Windows)、またはターミナル(Mac) などのコンソールを開く
+ 2. プロジェクトを作成する場所へ cd コマンドで移動する (ここでは `C:\repos\OedoDevelopersClub` とする)  
+ 3. コマンド `git clone https://github.com/OedoDevelopersClub/TicketsManager.git` を入力し実行する
+
+   * プロンプトでパスワード入力を促されるので、GitHub のログインパスワードを入力する
+     - ニ要素認証 (Two-factor authentication) を有効にしている場合はトークン ([https://github.com/settings/tokens](https://github.com/settings/tokens)) を入力する
+
+   参考： GitHub ページ ([https://github.com/OedoDevelopersClub/TicketsManager](https://github.com/OedoDevelopersClub/TicketsManager)) の以下の枠内が clone URL (クローンの対象を示す URI)
+
+   ![GitHub_git-clone](./images/GitHub_git-clone.png)
+
+ 4. NetBeans を開き、メニューバーの「ファイル」から「新規プロジェクト」を選択
+ 5. カテゴリ「Maven」を選択し、プロジェクト「既存のPOMを使用したプロジェクト」を選択して、「次」をクリックし「終了」
+ 6. ウィザード「プロジェクトを開く」が表示されるのでクローンしたフォルダを選択し、プロジェクトを開く
+
+   ![NetBenas_Import_Cloned_Maven_Project](./images/NetBenas_Import_Cloned_Maven_Project.png)
+
+ 7. インポートしたプロジェクトを右クリックし「プロパティ」を選択
+
+   ![NetBeans_Open_Project_Properties](./images/NetBeans_Open_Project_Properties.png)
+
+ 8. カテゴリ「ビルド」>「実行」を選択し、「サーバー」「Java EE バージョン」を以下のように選択し、OK
+
+   <dt>サーバー</dt><dd>GlassFish Server 4.1.1</dd>
+   <dt>Java EE バージョン</dt><dd>Java EE 7 Web</dd>
+   <dt>コンテキストパス</dt><dd>/TicketManager (デフォルト)</dd>
+
+   ![NetBeans_JavaEE__Project_Properties_Execution_Environment](./images/NetBeans_JavaEE__Project_Properties_Execution_Environment.png)
+
+ 9. メニューバー「デバッグ」から「プロジェクト(TicketManger)をデバッグ」を選択する
+ 10. プロジェクトがビルドされ、ブラウザが起動し、`http://localhost:8080/TicketsManager/` が開かれ初期画面が表示されれば成功
+
+## Java Web アプリケーション プロジェクトの作成と動作確認
+
+**※ 新規でプロジェクトを作成する場合の手順 (既に開発中のプロジェクトは 「Java Web アプリケーション プロジェクトのクローンと動作確認」を参照)**
 
 参考: [Getting Started with Contexts and Dependency Injection and JSF 2.x - NetBeans IDE Tutorial](https://netbeans.org/kb/docs/javaee/cdi-intro.html)
 
-試しに、新しく Java Web アプリケーションを作成してみます。
+新しく Java Web アプリケーションを作成してみます。
 
 1. メニューバーの「ファイル」から「新規プロジェクト...」を選択
 2. カテゴリ「Java Web」から「Webアプリケーション」を選択して次
