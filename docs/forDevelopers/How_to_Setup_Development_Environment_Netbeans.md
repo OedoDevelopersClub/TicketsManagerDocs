@@ -108,6 +108,24 @@ https://netbeans.org/downloads/
  9. メニューバー「デバッグ」から「プロジェクト(TicketManger)をデバッグ」を選択する
  10. プロジェクトがビルドされ、ブラウザが起動し、`http://localhost:8080/TicketsManager/` が開かれ初期画面が表示されれば成功
 
+## Java DB ローカルデータベースの作成
+
+ 1. 「サービス」タブを開き、データベース > Java DB を右クリックし、「データベースの作成」を選択
+ 2. 「Java DB データベース作成」ウィザードが表示されるので、以下の情報を入力し、「OK」
+
+   <dt>データベース名</dt><dd>ticket</dd>
+   <dt>ユーザー名</dt><dd>oedo</dd>
+   <dt>パスワード</dt><dd>※いつものやつ</dd>
+   <dt>パスワードの確認</dt><dd>※パスワードと同じ</dd>
+
+   ※ データベースの場所はデフォルト
+
+   ![NetBeans_JavaDB_Create_Database](./images/NetBeans_JavaDB_Create_Database.png)
+
+ 3. データベース ticket が作成され、接続文字列が表示されることを確認
+
+   ![NetBeans_JavaDB_Create_Database_Complete](./images/NetBeans_JavaDB_Create_Database_Complete.png)
+
 ## Java Web アプリケーション プロジェクトの作成と動作確認
 
 **※ 新規でプロジェクトを作成する場合の手順 (既に開発中のプロジェクトは 「Java Web アプリケーション プロジェクトのクローンと動作確認」を参照)**
@@ -148,3 +166,32 @@ https://netbeans.org/downloads/
 7. サーバの起動が完了したら、自動で既定のブラウザが起動し、index ページが表示される
 
   ![NetBeans New Web Project Server Running Result](./images/NetBeans_NewProject_Server_Running_Result.png)
+
+## java DB データベース接続情報 (永続性ユニット) の作成
+
+ 1. メニューバー「ファイル」から「新規ファイル」を選択する
+ 2. プロジェクトは「TicketManager」を選択し、カテゴリ「持続性」から「持続性ユニット」を選択し、次へ
+
+   ![NetBreans_Create_Persistence_Unit](./images/NetBeans_New_Persistence_Unit.png)
+
+ 3. 「New 持続性ユニット」ウィザードで、以下のように入力し、「終了」
+
+   <dt>持続性ユニット名</dt><dd>TicketsManagerPU</dd>
+   <dt>永続性プロバイダ</dt><dd>Eclipse Link (JPA 2.1)</dd>
+   <dt>データ・ソース</dt><dd>java:app/jdbc/ticket</dd>
+
+   - データ・ソースは「新しいデータ・ソース」で作成する
+
+     <dt>JNDI名</dt><dd>jdbc/ticket</dd>
+     <dt>データベース接続</dt><dd>jdbc:derby://localhost:1527//ticket (「Java DB ローカルデータベースの作成」で作成したデータベース接続)</dd>
+
+        ![NetBeans_Create_DataSource](./images/NetBeans_Create_DataSource.png)
+
+   <dt>Java Transaction API の使用</dt><dd>ON</dd>
+   <dt>表生成戦略</dt><dd>ドロップして作成</dd>
+
+     ![NetBeans_Create_Persistence_Unit](./images/NetBeans_Create_Persistence_Unit.png)
+
+ 4. `src/main/resources/META-INF` に `persistence.xml` が作成されることを確認する
+
+   ![NetBeans_Create_Persistence_Unit_Complete](./images/NetBeans_Create_Persistence_Unit_Complete.png)
