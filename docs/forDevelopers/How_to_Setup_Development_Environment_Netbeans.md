@@ -132,17 +132,20 @@ https://netbeans.org/downloads/
 
 参考: [Getting Started with Contexts and Dependency Injection and JSF 2.x - NetBeans IDE Tutorial](https://netbeans.org/kb/docs/javaee/cdi-intro.html)
 
-新しく Java Web アプリケーションを作成してみます。
+新しく Java Web アプリケーション (Maven) を作成ます。
 
 1. メニューバーの「ファイル」から「新規プロジェクト...」を選択
-2. カテゴリ「Java Web」から「Webアプリケーション」を選択して次
+2. カテゴリ「Maven」から「Webアプリケーション」を選択して次
 
   ![NetBeans New Project Select Project Template](./images/NetBeans_NewProject_SelectTemplate.png)
 
-3. プロジェクト名とプロジェクトの場所を入力して次
+3. プロジェクト名など、以下のように入力して次
 
-  <dt>プロジェクト名</dt><dd>SampleWebApplication (適当)</dd>
+  <dt>プロジェクト名</dt><dd>TicketsManager</dd>
   <dt>プロジェクトの場所</dt><dd>C:\repos\OedoDevelopsersClub (適当)</dd>
+  <dt>グループID</dt><dd>net.oekora</dd>
+  <dt>バージョン</dt><dd>0.1</dd>
+  <dt>パッケージ</dt><dd>(なし)</dd>
 
   ![NetBeans New Web Project Name and Location](./images/NetBeans_NewProject_Name_Location.png)
 
@@ -153,17 +156,11 @@ https://netbeans.org/downloads/
 
   ![NetBeans New Web Project Server and Configuration](./images/NetBeans_NewProject_Server_Configuration.png)
 
-5. フレームワークは JavaServer Faces を選択し、デフォルトの構成のまま、終了
-
-  * JPA の実装としては GlassFish サーバで EclipseLink がデフォルトで提供されるため、Hibernate は不要
-
-  ![NetBeans New Web Project Framework](./images/NetBeans_NewProject_Framework.png)
-
-6. プロジェクトの作成が完了したら、ツールバーの再生マークのボタンをクリックし、サーバ(GlassFish Server)を起動させる
+5. プロジェクトの作成が完了したら、メニューバーの「デバッグ」から「Project(TicketsManager)をデバッグ」を選択し、サーバ(GlassFish Server)を起動させる
 
   ![NetBeans New Web Project Server Running.png](./images/NetBeans_NewProject_Server_Running.png)
 
-7. サーバの起動が完了したら、自動で既定のブラウザが起動し、index ページが表示される
+6. サーバの起動が完了したら、自動で既定のブラウザが起動し、index ページが表示される
 
   ![NetBeans New Web Project Server Running Result](./images/NetBeans_NewProject_Server_Running_Result.png)
 
